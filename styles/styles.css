@@ -40,6 +40,16 @@ a{
     border: 2px dashed white;
 }
 
+.b-white{
+    color: black;
+    background-color: white;
+}
+
+.b-black{
+    color: white;
+    background-color: black;
+}
+
 
 /* header */
 /* top header */
@@ -79,24 +89,44 @@ header{
 }
 
 .hder-login{
-    background-color: white;
-    color: black;
     padding: 15px 20px;
     border-radius: 40px;
 }
 
 /* bottom header */
 .hder-bottom{
-    width: 100%;
-    justify-content: center;
-    padding: var(--margin) 0;   
+    margin-top: 150px;   
 }
 
 .hder-abstract{
-    height: 250px;
-    width: 800px;
-    background-color: #ee82ee;
+    width: 1080px;
+    text-align: center;
+    margin: 0 auto;
 }
+
+.hder-abstract h1{
+    font-size: 75px;
+    margin-bottom: 60px;    
+}
+
+.hder-abstract p{
+    font-size: 28px;
+    line-height: 40px;
+}
+
+.hder-big-buttons{
+    justify-content: space-evenly;
+    width: 75%;
+    margin: 50px auto;
+}
+
+.hder-button{
+    font-size: 28px;
+    padding: 20px 40px;
+    border-radius: 50px;
+}
+
+
 
 
 /* main */
