@@ -57,6 +57,11 @@ p{
     height: 50px;
 }
 
+.btn-login{
+    padding: 15px 30px;
+    border-radius: 40px;
+}
+
 .big-btn{
     font-size: 1rem;
     padding: 20px 40px;
@@ -113,11 +118,6 @@ header{
 
 .hder-top nav ul{
     justify-content: space-evenly;
-}
-
-.hder-login{
-    padding: 15px 20px;
-    border-radius: 40px;
 }
 
 /* bottom header */
