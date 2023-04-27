@@ -1,0 +1,172 @@
+/* css reset */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --margin: 50px
+}
+
+/* generals */
+
+body{
+    font-family: sans-serif;
+}
+
+/* utilities */
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.border-black{
+    border: 2px dashed black;
+}
+
+.border-white{
+    border: 2px dashed white;
+}
+
+/* header */
+/* top header */
+
+header{
+    background-color: darkblue;
+}
+.hder-top{
+    height: 50px;
+    width: 100%;
+    background-color: #add8e6;
+    align-items: center;
+}
+
+.hder-top-banner{
+    background-color: #daa520;
+    height: 75%;
+    width: 100%;    
+}
+
+.hder-top-banner *{
+    align-items: center;
+}
+
+.hder-top-banner div{
+    height: 100%;
+    flex-basis: 25%;
+    padding: 0 10px;
+}
+
+.hder-top-banner div:last-of-type{
+    justify-content: flex-end;
+}
+
+.hder-top-banner nav{
+    height: 100%;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.hder-top-banner nav ul{
+    list-style-type: none;
+}
+
+.hder-top-banner nav li{
+    display: inline;
+    padding: 0 5px;
+}
+
+/* bottom header */
+.hder-bottom{
+    width: 100%;
+    justify-content: center;
+    padding: var(--margin) 0;   
+}
+
+.hder-abstract{
+    height: 250px;
+    width: 800px;
+    background-color: #ee82ee;
+}
+
+
+/* main */
+section{
+    padding: var(--margin) 0;
+}
+section:nth-of-type(even){
+    background-color: lightgrey;    
+}
+
+.column{
+    height: 350px;
+}
+
+.c-large{
+    background-color: #1e90ff;
+    width: calc(100%/5 * 3);
+}
+
+.c-small{
+    background-color: #ffc0cb;
+    width: calc(100%/5 * 2);
+}
+
+.green-box{
+    background-color: #228b22;
+    height: 700px;
+    width: 100%;
+}
+
+
+/* Footer */
+footer{
+    background-color: #23272a;
+    padding-top: 15px;
+}
+
+/* top footer */
+.fter-top{
+    border-bottom: 2px solid white;
+}
+
+.fter-box{
+    margin-bottom: 40px;
+    height: 500px;
+}
+
+.fter-box-left{
+    background-color: #f08080;
+    width: calc(100% / 5 * 2);
+}
+
+.fter-box-right{
+    width: calc(100% / 5 * 3);
+}
+
+.fter-box-right-column{
+    width: calc(100% / 4);
+    background-color: #20b2aa;
+}
+
+
+/* bottom footer */
+.fter-bottom-box{
+    margin-top: 40px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7fffd4;
+    height: 50px;
+}
+
+.fter-bottom-box div{
+    background-color: #ffb6c1;
+    padding: 5px 8px;
+} 
