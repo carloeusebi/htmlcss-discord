@@ -13,13 +13,18 @@
 /* generals */
 
 body{
-    font-family: sans-serif;
+    font-family: "roboto", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 /* utilities */
 
 .container{
-    max-width: 1080px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -35,52 +40,49 @@ body{
     border: 2px dashed white;
 }
 
+
 /* header */
 /* top header */
-
 header{
-    background-color: darkblue;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    height: 800px;
+    color: white;
+    padding: 20px 0;
 }
-.hder-top{
-    height: 50px;
+
+.hder-top{    
     width: 100%;
-    background-color: #add8e6;
+    font-size: 20px;
     align-items: center;
 }
 
-.hder-top-banner{
-    background-color: #daa520;
-    height: 75%;
-    width: 100%;    
-}
-
-.hder-top-banner *{
-    align-items: center;
-}
-
-.hder-top-banner div{
-    height: 100%;
+.hder-top-left, .hder-top-right{
     flex-basis: 25%;
-    padding: 0 10px;
 }
 
-.hder-top-banner div:last-of-type{
+#hdr-logo{
+    height: 50px;
+}
+
+.hder-top-right{
     justify-content: flex-end;
 }
 
-.hder-top-banner nav{
-    height: 100%;
-    flex-grow: 1;
-    justify-content: center;
+.hder-top nav{
+    flex-basis: 50%;
 }
 
-.hder-top-banner nav ul{
+.hder-top nav ul{
     list-style-type: none;
+    justify-content: space-evenly;
 }
 
-.hder-top-banner nav li{
-    display: inline;
-    padding: 0 5px;
+.hder-login{
+    background-color: white;
+    color: black;
+    padding: 15px 20px;
+    border-radius: 40px;
 }
 
 /* bottom header */
