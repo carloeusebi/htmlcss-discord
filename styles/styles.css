@@ -166,7 +166,7 @@ section:nth-of-type(even)::before{
     top: calc(-75px - var(--margin));
 }
 
-section:nth-of-type(even):not(:last-of-type)::after
+section:nth-of-type(even)::after
 {
     bottom: calc(-75px - var(--margin));
     rotate: 180deg;
