@@ -13,7 +13,7 @@
 /* generals */
 
 body{
-    font-family: "roboto", sans-serif;
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 a{
@@ -95,7 +95,7 @@ header{
 
 /* bottom header */
 .hder-bottom{
-    margin-top: 150px;   
+    margin-top: 150px;
 }
 
 .hder-abstract{
