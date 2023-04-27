@@ -7,11 +7,15 @@
 }
 
 :root{
-    --margin: 100px;
+    --margin: 120px;
     --discord-color: #7289da;
 }
 
 /* generals */
+
+html{
+    font-size: 25px;
+}
 
 body{
     font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -27,20 +31,19 @@ ul{
 }
 
 h1, h2{
-    font-size: 60px;
+    font-size: 2.5rem;
 }
 
 h3{
-    font-size: 40px;
+    font-size: 1.75rem;
 }
 
 p{
-    font-size: 28px;
-    line-height: 40px;
+    font-size:  1rem;
+    line-height: 1.5rem;
 }
 
 /* utilities */
-
 .container{
     max-width: 1400px;
     margin: 0 auto;
@@ -55,7 +58,7 @@ p{
 }
 
 .big-btn{
-    font-size: 28px;
+    font-size: 1rem;
     padding: 20px 40px;
     border-radius: 50px;
 }
@@ -81,8 +84,11 @@ p{
 /* header */
 /* top header */
 header{
+    background-color: #255ee9;
     background-image: url(../img/jumbo.png);
-    background-size: cover;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
     color: white;
     padding: 20px 0 var(--margin);
 }
@@ -96,7 +102,6 @@ header{
 .hder-top-left, .hder-top-right{
     flex-basis: 25%;
 }
-
 
 .hder-top-right{
     justify-content: flex-end;
@@ -121,7 +126,7 @@ header{
 }
 
 .hder-abstract{
-    width: 1080px;
+    width: 70%;
     text-align: center;
     margin: 0 auto;
 }
@@ -131,7 +136,7 @@ header{
 }
 
 .hder-big-buttons{
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 75%;
     margin: 50px auto 0;
 }
@@ -145,28 +150,25 @@ section:nth-of-type(even){
     background-color: #f6f6f6;    
 }
 
-section:nth-of-type(even)::before{
-    content: "";
-    display: inline-block;
-    height: 50px;
-    width: 100%;
-    background-image: url(../img/wave.svg);
-    position: relative;
-    /* content needs to be moved up by the padding (--margin) + its own height  */
-    top: calc(-50px - var(--margin));
-    opacity: 0.04;
-}
-
+section:nth-of-type(even)::before,
 section:nth-of-type(even):not(:last-of-type)::after{
     /* wave needs to be added to every even row but not last row. for only four rows maybe this^ selector is overkill but it allows to add more rows easily */
     content: "";
     display: inline-block;
-    height: 50px;
+    height: 75px;
     width: 100%;
     background-image: url(../img/wave.svg);
     position: relative;
-    bottom: calc(-54px - var(--margin));
-    opacity: 0.04;
+}
+
+section:nth-of-type(even)::before{
+    /* content needs to be moved up by the padding (--margin) + its own height  */
+    top: calc(-75px - var(--margin));
+}
+
+section:nth-of-type(even):not(:last-of-type)::after
+{
+    bottom: calc(-75px - var(--margin));
     rotate: 180deg;
 }
 
@@ -206,8 +208,6 @@ section h2{
     padding: 50px;
 }
 
-
-
 /* Footer */
 footer{
     background-color: #23272a;
@@ -233,14 +233,17 @@ footer{
     width: 30px;
 }
 
+.lang{
+    font-size: .65rem;
+}
+
 .fter-lang *{
     vertical-align: middle;    
 }
 
-.social-media-logos{
-    font-size: 20px;
-    width: calc(100% / 3);
-    justify-content: space-between;
+.social-media-logos > *{
+    font-size: 1rem;
+    padding-right: 20px;
 }
 
 .fter-top-box-right{
@@ -253,7 +256,7 @@ footer{
 
 footer li{
     margin-bottom: 15px;
-    font-size: 20px;
+    font-size: .8rem;
 }
 
 footer li:first-child{
