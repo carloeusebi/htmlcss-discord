@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord | Il luogo ideale per parlare</title>
-    <link rel="icon" href="img/icon.jpg" type="icon/png">
     <link rel="stylesheet" href="styles/styles.css" type="text/css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/e3c048313b.js" crossorigin="anonymous"></script>
+    <title>Discord | Il luogo ideale per parlare</title>
 </head>
 <body>
 
@@ -21,7 +22,7 @@
         <div class="hder-top flex container">
             <!-- left part of top header, the logo -->            
             <div class="hder-top-left flex">
-                <img id="hdr-logo" src="img/logo.svg" alt="Discord Logo">
+                <img class="logo" src="img/logo.svg" alt="Discord Logo">
             </div>
 
             <!-- navbar in the middle -->
@@ -148,26 +149,94 @@
         <!-- top part of the footer -->
         <div class="fter-top">
             <!-- this div contains both parts of the main footer -->
-            <div class="fter-box flex container">
+            <div class="fter-top-box flex container">
                 <!-- left part -->
-                <div class="fter-box-left border-black">
+                <div class="fter-top-box-left">
+                    <h3 class="t-purple">Il tuo posto per parlare</h3>
+                    <div class="fter-lang">
+                        <img class="lang-flag" src="img/ita.png" alt="ita_flag">
+                        <span class="lang">Italiano</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="social-media-logos flex">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
                 </div>
                 <!-- right part groups togheter four sub-columns -->
-                <div class="fter-box-right flex border-black">
-                    <div class="fter-box-right-column border-white"></div>
-                    <div class="fter-box-right-column border-white"></div>
-                    <div class="fter-box-right-column border-white"></div>
-                    <div class="fter-box-right-column border-white"></div>
+                <div class="fter-top-box-right flex">
+
+                    <div class="fter-top-box-right-column">
+                        <nav>
+                            <ul>
+                                <li>Prodotto</li>
+                                <li><a href="#">Scarica</a></li>
+                                <li><a href="#">Perchè Discord</a></li>
+                                <li><a href="#">Nitro</a></li>
+                                <li><a href="#">Sicurezza</a></li>
+                                <li><a href="#">Assistenza</a></li>                                
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div class="fter-top-box-right-column">
+                        <nav>
+                            <ul>
+                                <li>Compagnia</li>
+                                <li><a href="#">Chi siamo</a></li>
+                                <li><a href="#">Lavora con noi</a></li>
+                                <li><a href="#">Marchio</a></li>
+                                <li><a href="#">Redazione</a></li>
+                                <li><a href="#">Negozio</a></li>                                
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div class="fter-top-box-right-column">
+                        <nav>
+                            <ul>
+                                <li>Risorse</li>
+                                <li><a href="#">Scarica</a></li>
+                                <li><a href="#">Perchè Discord</a></li>
+                                <li><a href="#">Nitro</a></li>
+                                <li><a href="#">Sicurezza</a></li>
+                                <li><a href="#">Assistenza</a></li>                                
+                                <li><a href="#">Scarica</a></li>
+                                <li><a href="#">Perchè Discord</a></li>
+                                <li><a href="#">Nitro</a></li>
+                                <li><a href="#">Sicurezza</a></li>
+                                <li><a href="#">Assistenza</a></li>                                
+                                <li><a href="#">Assistenza</a></li>                                
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div class="fter-top-box-right-column">
+                        <nav>
+                            <ul>
+                                <li>Norme</li>
+                                <li><a href="#">Scarica</a></li>
+                                <li><a href="#">Perchè Discord</a></li>
+                                <li><a href="#">Nitro</a></li>
+                                <li><a href="#">Sicurezza</a></li>
+                                <li><a href="#">Assistenza</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- bottom part of the header -->
-        <div class="fter-bottom">
-            <!-- bottom part of the footer contains two "buttons" -->
-            <div class="fter-bottom-box container flex">
-                <div class="border-black">Logo</div>
-                <div class="border-black">Button</div>
+        <!-- bottom part of the footer contains two "buttons" -->
+        <div class="fter-bottom container flex">
+            <div>
+                <img class="logo" src="img/logo.svg" alt="Discord Logo">
+            </div>
+            <div class="hder-top-right flex"> 
+                <a href="#"><span class="hder-login b-purple">Registrati</span></a>
             </div>
         </div>
     </footer>

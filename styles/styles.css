@@ -7,7 +7,8 @@
 }
 
 :root{
-    --margin: 200px
+    --margin: 100px;
+    --discord-color: #7289da;
 }
 
 /* generals */
@@ -21,8 +22,12 @@ a{
     color: white;
 }
 
+ul{
+    list-style-type: none;
+}
+
 h1, h2{
-    font-size: 65px;
+    font-size: 60px;
 }
 
 h3{
@@ -45,12 +50,8 @@ p{
     display: flex;
 }
 
-.border-black{
-    border: 2px dashed black;
-}
-
-.border-white{
-    border: 2px dashed white;
+.logo{
+    height: 50px;
 }
 
 .big-btn{
@@ -70,7 +71,11 @@ p{
 }
 
 .b-purple{
-    background-color: #8ea1e1;
+    background-color: var(--discord-color);
+}
+
+.t-purple{
+    color: var(--discord-color);
 }
 
 /* header */
@@ -92,9 +97,6 @@ header{
     flex-basis: 25%;
 }
 
-#hdr-logo{
-    height: 50px;
-}
 
 .hder-top-right{
     justify-content: flex-end;
@@ -105,7 +107,6 @@ header{
 }
 
 .hder-top nav ul{
-    list-style-type: none;
     justify-content: space-evenly;
 }
 
@@ -134,9 +135,6 @@ header{
     width: 75%;
     margin: 50px auto 0;
 }
-
-
-
 
 /* main */
 section{
@@ -213,44 +211,59 @@ section h2{
 /* Footer */
 footer{
     background-color: #23272a;
-    color: #7289da;
-    padding-top: 15px;
+    color: white;
+    padding-top: 50px;
 }
 
 /* top footer */
-.fter-top{
-    border-bottom: 2px solid white;
+.fter-top-box{
+    padding-bottom: 40px;
+    border-bottom: 2px solid var(--discord-color);    
 }
 
-.fter-box{
-    margin-bottom: 40px;
+.fter-top-box-left{
+    flex-basis: calc(100% / 5 * 1.5);
 }
 
-.fter-box-left{
-    background-color: #f08080;
-    width: calc(100% / 5 * 1.5);
+.fter-top-box-left > *{
+    margin-bottom: 30px;
 }
 
-.fter-box-right{
+.lang-flag{
+    width: 30px;
+}
+
+.fter-lang *{
+    vertical-align: middle;    
+}
+
+.social-media-logos{
+    font-size: 20px;
+    width: calc(100% / 3);
+    justify-content: space-between;
+}
+
+.fter-top-box-right{
     flex-grow: 1
 }
 
-.fter-box-right-column{
+.fter-top-box-right-column{
     width: calc(100% / 4);
-    background-color: #20b2aa;
 }
 
+footer li{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+footer li:first-child{
+    font-weight: 900;
+    color: var(--discord-color);
+}
 
 /* bottom footer */
-.fter-bottom-box{
-    margin-top: 40px;
+.fter-bottom{
+    padding: 30px 0 60px;
     justify-content: space-between;
     align-items: center;
-    background-color: #7fffd4;
-    height: 50px;
 }
-
-.fter-bottom-box div{
-    background-color: #ffb6c1;
-    padding: 5px 8px;
-} 
