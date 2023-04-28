@@ -91,7 +91,7 @@ p{
 header{
     background-color: #255ee9;
     background-image: url(../img/jumbo.png);
-    background-size: contain;
+    background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
     color: white;
