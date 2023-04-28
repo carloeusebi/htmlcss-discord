@@ -7,14 +7,14 @@
 }
 
 :root{
-    --margin: 120px;
+    --margin: 100px;
     --discord-color: #7289da;
 }
 
 /* generals */
 
 html{
-    font-size: 25px;
+    font-size: 20px;
 }
 
 body{
@@ -40,12 +40,12 @@ h3{
 
 p{
     font-size:  1rem;
-    line-height: 1.5rem;
+    line-height: 1.5;
 }
 
 /* utilities */
 .container{
-    max-width: 1400px;
+    max-width: 1080px;
     margin: 0 auto;
 }
 
@@ -108,6 +108,13 @@ header{
     flex-basis: 25%;
 }
 
+.hder-top-left{
+    justify-content: flex-start;
+}
+
+.hder-top-right{
+    justify-content: flex-end;
+}
 .hder-top-right{
     justify-content: flex-end;
 }
@@ -117,7 +124,11 @@ header{
 }
 
 .hder-top nav ul{
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.hder-top nav li{
+    margin-right: 20px;
 }
 
 /* bottom header */
@@ -135,10 +146,12 @@ header{
     margin-bottom: 60px;    
 }
 
-.hder-big-buttons{
-    justify-content: space-between;
-    width: 75%;
-    margin: 50px auto 0;
+.hder-abstract p{
+    margin-bottom: 60px;
+}
+
+.hder-abstract .big-btn.b-white{
+    margin-right: 20px;
 }
 
 /* main */
@@ -155,7 +168,7 @@ section:nth-of-type(even):not(:last-of-type)::after{
     /* wave needs to be added to every even row but not last row. for only four rows maybe this^ selector is overkill but it allows to add more rows easily */
     content: "";
     display: inline-block;
-    height: 75px;
+    height: 50px;
     width: 100%;
     background-image: url(../img/wave.svg);
     position: relative;
@@ -163,12 +176,11 @@ section:nth-of-type(even):not(:last-of-type)::after{
 
 section:nth-of-type(even)::before{
     /* content needs to be moved up by the padding (--margin) + its own height  */
-    top: calc(-75px - var(--margin));
+    top: calc(-50px - var(--margin));
 }
 
-section:nth-of-type(even)::after
-{
-    bottom: calc(-75px - var(--margin));
+section:nth-of-type(even)::after{
+    bottom: calc(-50px - var(--margin));
     rotate: 180deg;
 }
 
